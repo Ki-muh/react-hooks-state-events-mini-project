@@ -2,7 +2,7 @@ import React from "react";
 import Task from "./Task";
 
 function TaskList({ tasks,click }) {
-  let tasksL = tasks.map((task, ind) =>
+  let tasksList = tasks.map((task, ind) =>
     <Task
       key={ind}
       task={task}
@@ -12,7 +12,7 @@ function TaskList({ tasks,click }) {
   return (
     <div className="tasks">
       {/* display a list of tasks using Task component */}
-      {tasksL}
+      {tasksList}
     </div>
   );
 }
